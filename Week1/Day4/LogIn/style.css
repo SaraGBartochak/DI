@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.division {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.leftside {
+    left: 0;
+    background-color: white;
+}
+.rightside {
+    right: 0;
+    background-color: purple; 
+    background-image: linear-gradient(-45deg, purple, black);
+}
+.centered {
+  position:relative;
+  justify-content: center;
+  width: 350px;
+  height: 500px;
+  transform: translate(28.5%, 9%);
+  text-align: center;
+  border: 1px solid red;
+}
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      color: black;
+  }
