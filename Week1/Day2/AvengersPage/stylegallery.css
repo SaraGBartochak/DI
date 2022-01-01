@@ -24,7 +24,6 @@ body {
     color: rgb(255, 255, 255);
   }
 
-
   p {
       color: #f7e706;
       font-family: 'Roboto Slab', serif;
@@ -67,6 +66,25 @@ body {
 	color: #b3b3b3;
 	font-size: 11px;
 }
+	/*Here is the mdia queries*/
+	@media only screen and (max-width: 1024px) {
+		.topnav {
+		  width: 50%;
+		  background-color: rgba(216, 56, 56, 0.562);
+		}
+	  }
+	  @media only screen and (max-width: 680px) {
+		.topnav {
+		  width: 100%;
+		}
+	  }
+	  @media only screen and (max-width: 480px) {
+		.topnav {
+		  width: 100%;
+		  background: rgba(247, 226, 106, 0.582)
+		}
+	  }
+
   /*here beggins the WOWSlider*/
   .instuction {
 	font-family: sans-serif, Arial;

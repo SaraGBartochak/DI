@@ -57,10 +57,6 @@ body, html {
   .span { 
       background-color: rgba(5, 5, 5, 0.589);
   }
-  /*.bgtext { 
-    background-color: rgba(5, 5, 5, 0.842);
-  }*/
-
   footer {
 	background: rgb(32, 31, 31, 0.3);
     position:absolute;
@@ -100,4 +96,22 @@ body, html {
     color: b3b3b3;
       font-family: 'Roboto Slab', serif;
 }
+/*Here is the mdia queries*/
+@media only screen and (max-width: 1024px) {
+  .topnav {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.562);
+  }
+  }
+  @media only screen and (max-width: 680px) {
+  .topnav {
+    width: 100%;
+  }
+  }
+  @media only screen and (max-width: 480px) {
+  .topnav {
+    width: 100%;
+    background: rgba(169, 169, 169, 0.582)
+  }
+  }
   
