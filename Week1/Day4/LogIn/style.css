@@ -87,6 +87,7 @@ body {
   }
   .submit {
       background-color: purple;
+      text-align: center;
       color: white;
       width: 363px;
       height:35px;
