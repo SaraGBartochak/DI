@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Fjalla+One&family=Montserrat:ital,wght@0,400;1,600&family=Mukta:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Log In</title>
 </head>
@@ -12,23 +15,41 @@
     <div class="division leftside">
      <div class="centered">
          <h1>Log In</h1>
-         <label for="email">Email</label>
-         <input type="email" id="email" name="email">
-
-             <label for="pass">Password</label>
-                 <input type="password" id="pass" name="password">
-                    
-            <label for="checkbox" id="remember" name="rememberme">Remember me</label>
-                 <input type="checkbox">
-                      <a href="">Forgot password?</a>
-                          <input type="submit">
-            <hr> 
-           </div>
-           </div>
-
+        <div class="wrap"> <label for="email"></label>
+         <input type="email" id="email" name="email" placeholder="Email">
+            <br>
+             <label for="pass"></label>
+                 <input type="password" id="pass" name="password" placeholder="Password">
+                 <br>
+    <div class="recover">
+         <input type="checkbox">
+             <label for="checkbox" id="checkbox" name="checkbox">Remember me</label>
+                 <a href="">Forgot password?</a>
+            <button type="button" class="submit">LOG IN</button>
+            <hr>
+    </div> 
+    </div>
+    
+    </div>
+    </div>
+        <ul class="links">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+               </li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <div class="copyright">
+        <p class="copyright"><i id="copy" class="far fa-copyright"></i> 2021</p>
+        
     <div class="division rightside">
-        <div class="centered"> 
-        </div>
+    <div class="centered"> 
+        <span><i id="icon" class="fas fa-user-plus"></i></span>
+        <h1 class="hello">Hello, friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+
+        <div><button type="button" id="button">Register<i id="arrow" class="far fa-arrow-alt-circle-right"></i></button></div>
+
+    </div>
     </div>
 </body>
 </html>
