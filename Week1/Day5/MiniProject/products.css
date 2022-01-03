@@ -1,0 +1,99 @@
+.container { 
+    position: relative;
+    justify-content: center;
+    height: 1600px;
+    width: 93%;
+    margin-left: 50px;
+    padding-left: 40px;
+}
+.images { 
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    z-index: 0;
+}
+img { 
+    width: 155px;
+    height: 155px;
+    padding: 10px 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 40px; 
+    border: 3px solid rgba(255, 105, 180, 0.719);
+    border-radius: 25px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: lightsalmon;
+    text-shadow: 1px 1px 0 lightslategrey, 
+    2px 2px 0 lightslategrey;
+}
+.img_span {
+    font-size: 17px;
+    margin-left: 75px;
+    padding: 6px 6px;
+    background-color: rgb(226, 69, 192);
+    color: white;
+    border-radius: 10px;
+}
+.span_ {
+    background-color: transparent;
+    text-decoration: line-through;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: rgb(134, 134, 134);
+    border-radius: 10px;
+}
+.percent { 
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-left: -110px;
+    margin-top: 50px;
+}
+p {
+    color: lightsalmon;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-left: 72px;
+}
+button { 
+    display: block;
+    background-color: rgb(201, 81, 191);
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    outline: palegoldenrod;
+    color: white;
+    width: 150px;
+    font-size: 19px;
+    border-radius: 10px;
+    margin-left: 72px;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: white;
+    color: rgb(201, 81, 191);
+}
+.hover_images:hover::after { 
+    content: "";
+    width: 182px;
+    height: 180px;
+    background-color: rgba(255, 192, 203, 0.589);
+    position: absolute;
+    margin-top: 39px;
+    left: 50px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 40px;
+    z-index: 10;
+    opacity: .5;
+}

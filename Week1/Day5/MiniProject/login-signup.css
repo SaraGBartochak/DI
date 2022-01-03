@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  background-color: rgb(250, 253, 200);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.topnav {
+  width: 90%;
+  border: 3px solid rgba(238, 130, 238, 0.322);
+  border-radius: 15px;
+  margin-left: 50px;
+  padding: 5px 20px;
+  word-spacing: 2px;
+  background-color: rgba(255, 182, 193, 0.527);
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 20px;
+}
+.topnav a {
+  color: lightsalmon;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 lightslategrey, 
+  1px 1px 0 lightslategrey;
+}
+.topnav a:hover {
+  color: rgb(255, 255, 255);
+}
+#smile {
+  color: rgb(250, 197, 98);
+  font-size: 60px;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+.login, .signup {
+    float: right;
+    padding-right: 20px;
+    padding-top: 40px; 
+    text-decoration: none;
+
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+.container {
+    width: 550px;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 390px 
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+button {
+  background-color: #d34fb6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: violet;
+    text-shadow: 1px 1px 0 lightslategrey, 
+    2px 2px 0 lightslategrey;
+}
+b {
+    color: violet;
+    text-shadow: 1px 1px 0 lightslategrey, 
+    1px 1px 0 lightslategrey;
+    font-size: 1.1rem;
+}
+button:hover {
+  opacity: 0.7;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+footer { 
+  position:absolute;
+  background-color: rgba(255, 182, 193, 0.527);
+  color: lightsalmon;
+  width: 90%;
+  border: 3px solid rgba(238, 130, 238, 0.322);
+  border-radius: 15px;
+  margin-top: 150px;
+  margin-left: 50px;
+  padding: 20px 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.copyright {
+  text-align: center;
+}
+.copyright p {
+margin: 0;
+color: lightsalmon;
+  font-size: 14px;
+}
+#copyright { 
+  color: b3b3b3;
+}
+i {
+  padding-right: 5px;
+}
