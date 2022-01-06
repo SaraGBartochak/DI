@@ -1,0 +1,27 @@
+body { 
+    margin: 0 auto;
+    padding: 0px;
+}
+.wrapper { 
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap; 
+    align-content:space-between;
+    justify-content: space-between;
+}
+.orange {
+    background-color: rgb(255, 115, 0);
+    width: 10%;
+    height: 10%;
+}
+.salmon {
+    background-color: rgb(252, 215, 53);
+    width: 10%;
+    height: 10%;
+}
+.brown {
+    background-color: rgb(151, 98, 0);
+    width: 10%;
+    height: 10%;
+}

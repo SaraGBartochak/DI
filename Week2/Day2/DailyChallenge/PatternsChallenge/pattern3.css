@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.wrapper { 
+    display: grid;
+    width:500px;
+    height: 500px;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+}
+.white { 
+    background-color: white;
+}
+.pink { 
+    background-color: pink;
+}
+.darkpink { 
+    background-color: rgb(194, 57, 110);
+}

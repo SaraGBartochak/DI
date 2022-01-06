@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background-image:url(./img/wallpaper2you_408674.jpg);
+    background-repeat: no-repeat;
+}
+h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.mediumh2 { 
+    width: 300px;
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+.bigh2 { 
+    width: 300px;
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    margin-left: -20px;
+}
+.smaller { 
+    width: 200px;
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 10px;
+}
+p {
+    font-size: 20px;
+    padding-left: 15px;
+}
+.span { 
+    color: darkslateblue;
+    font-size: 3.5rem;
+}
+.wraper { 
+    width: 100%;
+    height: 900px;
+}
+.number1 { 
+    margin-left: 140px;
+}
+.number2 { 
+    margin-left: 550px;
+    margin-top: -113px;
+}
+.number3 {
+    margin-left: 1054px;
+    margin-top: -113px;
+}
+.bigtext {
+    display: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 12%;
+    overflow: hidden;
+}
+.witheletters { 
+    color: white;
+    font-size: 25px;
+}
+.boxes { 
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+}
+.pinkbox {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    color: gray;
+    box-shadow: 2px 2px 2px 2px  rgb(105, 105, 105);
+    border-radius: 5px;
+    
+}
+.bluebox { 
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    color: gray;
+    box-shadow: 2px 2px 2px 2px  rgb(105, 105, 105);
+    margin-top: 150px;
+    border-radius: 5px;
+}
+.greenbox {
+    width: 350px;
+    height: 200px;
+    color: gray;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px  rgb(105, 105, 105);
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.img_text1 {
+    width: 350px;
+    height: 120px;
+    background-color: rgb(236, 133, 168);
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+    text-align: center;
+    color: white;
+    margin-top: -53px;
+    padding-top: 59px;
+    border-radius: 5px;
+}
+.img_text2 {
+    width: 350px;
+    height: 120px;
+    background-color: darkslateblue;
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+    text-align: center;
+    color: white;
+    margin-top: -53px;
+    padding-top: 59px;
+    border-radius: 5px;
+}
+.img_text3 {
+    width: 350px;
+    height: 120px;
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
+    margin-top: -40px;
+    text-align: center;
+    padding-top: 52px;
+    color: white;
+    border-radius: 5px;
+}
+img {
+    text-align: center;
+    margin-left: 125px;
+    margin-top: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+}
+/*
+@media screen and (min-width: 40em) {
+    .wraper {
+        width: 100%;
+   }
+ 
+    .boxes {
+        width: 100%;
+    }
+}
+ 
+@media screen and (min-width: 60em) {
+    .wraper {
+        width: 100%;
+   }
+     
+     .boxes {
+         width: 50%;
+     }
+}
+ 
+ 
+@media screen and (min-width: 52em) {
+    .wraper{
+        width: 100%;
+    }
+    .boxes { 
+        width: 50%;
+    }
+}*/
