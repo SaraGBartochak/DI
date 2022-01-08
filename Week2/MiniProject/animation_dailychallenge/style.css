@@ -1,0 +1,138 @@
+body {
+    margin: 0 auto;
+    padding: 0px;
+   
+}
+.box1 { 
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    margin: 60px;
+    transition:all 0.2s ease;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.box1:hover {
+    border-radius: 50%;
+    background-color: hotpink;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.box2 { 
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    margin: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    transition:all 0.3s in;
+}
+.box2:hover {
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+}
+.box3 { 
+    width: 250px;
+    height: 250px;
+    background-color: powderblue;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.box3:hover { 
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.box4 { 
+    position: relative;
+    animation-name: box4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    width: 250px;
+    height: 250px;
+    background-color: sandybrown;
+    margin: 60px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+@keyframes box4 { 
+    0% { background-color: sandybrown;}
+    25% { background-color: coral;}
+    50% { background-color: indianred;}
+    75% { background-color: tan;}
+    100% { background-color:pink;}
+}
+.box5 { 
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    margin: 60px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.box5:hover {
+    box-shadow: inset 0 0 0 25px #000000b2;
+}
+.box6 { 
+    width: 250px;
+    height: 250px;
+    background-color: mediumseagreen;
+    margin: 60px;
+    color: rgb(3, 3, 3);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition:all 0.2s ease;
+}
+.box6:hover { 
+    background-color: darkcyan;
+    border-radius: 0px;
+}
+.box7 { 
+    width: 250px;
+    height: 250px;
+    background-color: rgb(196, 190, 131);
+    margin: 60px;
+    color: rgb(54, 54, 54);
+    font-size: 25px;
+    text-align: center;
+}
+.box7 {
+        opacity:0.5;
+}
+.box7:hover {
+        opacity:1;
+}
+.box8 { 
+    position:relative;
+    animation-name: box8;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    margin: 60px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+   
+}
+@keyframes box8 { 
+    0%   {background-color:black; left:0px; top:0px;}
+  25%  {background-color:rgb(46, 46, 46); left:200px; top:0px;}
+  50%  {background-color:rgb(73, 73, 73); left:200px; top:200px;}
+  75%  {background-color:rgb(114, 114, 114); left:0px; top:200px;}
+  100% {background-color:rgb(175, 175, 175); left:0px; top:0px;}
+}
