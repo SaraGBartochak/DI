@@ -77,6 +77,21 @@ button {
 h3 { 
    text-decoration: underline;
 }
+#home { 
+   text-decoration: none;
+}
+#about { 
+    text-decoration: none;
+}
+#work { 
+    text-decoration: none;
+}
+#experience { 
+    text-decoration: none;
+}
+#social { 
+    text-decoration: none;
+}
 footer {
     position:absolute;
     justify-content: space-between;
