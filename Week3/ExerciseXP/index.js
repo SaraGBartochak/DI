@@ -30,7 +30,7 @@ console.log(watchedSeries);
 let celsius = 35;
 
 let fahrenheit = ((9/5) * celsius) + 32;
-console.log(fahrenheit);
+console.log(celcius + "ºC is" + fahrenheit + "Fahrenheit");
 
 /*prediction*/
 
