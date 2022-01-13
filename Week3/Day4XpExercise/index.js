@@ -30,9 +30,9 @@ if (newDog === "Chihuahua") {
 
 //Exercise 3
 
-let user = prompt("Type any number:");
+let user = parseInt(prompt("Type any number:"));
 
-document.getElementsByName(user).value;
+//document.getElementsByName(user).value;
 
 if (user % 2 == 0) {
     prompt('is an even number');
@@ -54,10 +54,10 @@ case 1:
     break;
 
 case 2: 
-console.log(`${users[1]} and ${users[2]} are online`);
+console.log(`${users[0]} and ${users[1]} are online`);
     break;
 
 default:
-    console.log(`${users[1]} , ${users[2]} and more ${users.length} are online`);
+    console.log(`${users[0]} , ${users[1]} and ${users.length -2} more are online`);
     break;
 } 
