@@ -43,13 +43,21 @@ if (user % 2 == 0) {
 //Exercise 4
 
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
-console.log();
 
-switch (users) {
-    case []:
+switch (users.length) {
+    case 0:
     console.log("no one is online");
     break;
 
-case [1]:
-    console.log()
+case 1:
+    console.log(`${users[1]} is online`);
+    break;
+
+case 2: 
+console.log(`${users[1]} and ${users[2]} are online`);
+    break;
+
+default:
+    console.log(`${users[1]} , ${users[2]} and more ${users.length} are online`);
+    break;
 } 
