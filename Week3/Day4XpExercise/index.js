@@ -14,7 +14,7 @@ if ( x > y) {
 //Exercise 2: Chihuahua
 
 let newDog = 'Chihuahua';
-console.log(length);
+console.log(newDog.length);
 
 newDog.toUpperCase();
 console.log();
