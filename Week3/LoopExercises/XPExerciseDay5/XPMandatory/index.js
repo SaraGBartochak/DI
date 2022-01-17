@@ -33,13 +33,14 @@ for (let i = 0; i < people.length; i++) {
 //Exercise 2 
 
 let myFavColors = ["Black", "DarkBlue", "Lilac", "Red Wine"];
- for (let i = 0; i < myFavColors.length; i++) {
-    console.log('My # ' + i + 'choise is' + myFavColors[i]);
-}
+//  for (let i = 0; i < myFavColors.length; i++) {
+//     console.log('My # ' + i + 'choise is' + myFavColors[i]);
+// }
+let position = 
 
-//  myFavColors.forEach(function(myFavColors, i) {
-//      console.log(myFavColors, i)
-//  });
+ myFavColors.forEach(function(myFavColors, i) {
+     console.log("My" + (i +1) + position + "favorite color is" myFavColors)
+ });
 
 //Ecercise 3
 
@@ -47,7 +48,6 @@ let number = parseInt(prompt("Type a number"));
 
 while (number < 10) {
     console.log(number);
-    number++;
 }
 
 
@@ -69,8 +69,7 @@ let building = {
     },
 }
     console.log(building.numberOfFloors);
-    console.log(building.numberOfAptByFloor["firstFloor"]);
-    console.log(building.numberOfAptByFloor["thirdFloor"]);
+    console.log(building.numberOfAptByFloor.firstFloor + building.numberOfAptByFloor.thirdFloor);
     console.log(building.numberOfRoomsAndRent["dan"]);
 
     let sum = building.numberOfRoomsAndRent["david"][1] + building.numberOfRoomsAndRent["sarah"][1];

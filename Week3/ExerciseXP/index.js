@@ -3,8 +3,6 @@ let favMeal = ["Break-Fast", "Lunch", "Dinner"];
 console.log('I eat', foods[3], 'at every', favMeal[0]);
 
 let watchedSeries = ["black mirror", "money heist", "the big bang theory"];
-let watchedSeriesLenght = ["0", "1", "2"];
-let myWatchedSeries = 'black mirror, money heist, and the big bang theory';
 
 console.log('I watched', watchedSeries.length, 'series', myWatchedSeries);
 
