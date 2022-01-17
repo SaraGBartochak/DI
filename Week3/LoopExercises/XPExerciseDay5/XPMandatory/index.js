@@ -4,13 +4,13 @@ let firstElement = people.shift();
 console.log();
 
 people.splice([2], 1);
+console.log(people);
 people.splice([3], 1, "Jason");
 console.log(people);
 
 let newName = people.push("Sara");
 console.log(people);
 
-//console.log(people[0]);
 console.log(people.indexOf("Mary"));
 
 let newPeople = people.slice([1], [3]);
@@ -33,20 +33,22 @@ for (let i = 0; i < people.length; i++) {
 //Exercise 2 
 
 let myFavColors = ["Black", "DarkBlue", "Lilac", "Red Wine"];
-//  for (let i = 0; i < myFavColors.length; i++) {
-//     console.log('My # ' + i + 'choise is' + myFavColors[i]);
-// }
-let position = 
 
- myFavColors.forEach(function(myFavColors, i) {
-     console.log("My" + (i +1) + position + "favorite color is" myFavColors)
- });
+ for (let i = 0; i < myFavColors.length; i++) {
+    console.log("My", (i+1), "favorite color is", myFavColors[i]);
+}
 
-//Ecercise 3
+//  myFavColors.forEach(function(myFavColors, i) {
+//      console.log("My" + (i +1) + position + "favorite color is" myFavColors)
+//  });
+
+// Exercise 3
 
 let number = parseInt(prompt("Type a number"));
+console.log(number);
 
 while (number < 10) {
+    number = parseInt(prompt("Type a number"))
     console.log(number);
 }
 
