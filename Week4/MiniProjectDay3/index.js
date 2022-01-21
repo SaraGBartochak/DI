@@ -22,7 +22,7 @@ function playTheGame() {
         alert("No problem, goodbye!");
     }
 }
-
+test();
 playTheGame();
 let round = 0;
 
@@ -43,4 +43,3 @@ function test(userNumber, computerNumber) {
 }
 }
 }
-test();
