@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Cairo:wght@300&family=Cormorant+Garamond:ital,wght@1,300&   family=Fjalla+One&family=Indie+Flower&family=Montserrat:ital,wght@0,400;1,600&family=Mukta:wght@400;700&family=Nunito:ital,wght@1,300&  family=Roboto+Slab&family=Shizuru&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--end-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--End Font Awesome-->
+    
+    <link rel="stylesheet" type="text/css" href="game.css">
+
+    <title>Drag and Drop</title>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-primary">
+        <a href="./index.html">Home</a>
+        <a href="./funactivities.html">Fun Activities</a>
+        <a href="./tips.html">Tips</a>
+        <a href="./contact.html">Contact me</a>
+      </nav>
+</header>
+    <div class="container-fluid">
+
+      <h1>Drag and drop the color in it's right place</h1>
+      <h2>Instruction: Drag the picture with the correspondent colot to the correspondent name color in the box.</h2>
+
+      <button class="btn" onclick="replay()">Play Again!</button>
+
+    <div id="dropZone">
+
+      <div id="blue" class="blue" ondrop="drop(event)" ondragover="allowDrop(event)">Blue</div>
+      <div id="green" class="green" ondrop="drop(event)" ondragover="allowDrop(event)">Green</div>
+      <div id="yellow" class="yellow" ondrop="drop(event)" ondragover="allowDrop(event)">Yellow</div>
+      <div id="pink"class="pink" ondrop="drop(event)" ondragover="allowDrop(event)">Pink</div>
+      <div id="red" class="red" ondrop="drop(event)" ondragover="allowDrop(event)">Red</div>
+      <div id="orange" class="orange" ondrop="drop(event)" ondragover="allowDrop(event)">Orange</div>
+  </div>
+
+
+    <div id="colors" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      
+      <img id="sun" src="./img/GameImg/sun.png" draggable="true" ondragstart="drag(event)"/>
+
+      <img id="pig" src="./img/GameImg/pink_pig.jpg" draggable="true" ondragstart="drag(event)"/>
+
+      <img id="tomato" src="./img/GameImg/tomato.png" draggable="true" ondragstart="drag(event)"/>
+
+      <img id="avocado" src="./img/GameImg/green-avocado-.jpg" draggable="true" ondragstart="drag(event)"/>
+
+      <img id="fruit_orange" src="./img/GameImg/orange.jpg" draggable="true"draggable="true" ondragstart="drag(event)"/>
+
+     
+
+      <img id="diamon" src="./img/GameImg/Blue-diamond.jpg" draggable="true" ondragstart="drag(event)"/>
+      </div>
+
+
+    </div>
+
+    <footer>
+      <i class="far fa-copyright">Copyright 2022</i>
+  </footer>
+
+<script src="game.js"></script>
+</body>
+</html>

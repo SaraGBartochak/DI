@@ -1,0 +1,94 @@
+body {
+    font-family:'Zen Kurenaido', sans-serif;
+  }
+  .navbar > a { 
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.navbar a:hover { 
+    cursor: pointer;
+    color: rgb(95, 248, 7);
+}
+.container-fluid {
+  width: 90%;
+  height: 800px;
+}
+.btn { 
+  margin: 50px 50px;
+  padding: 10px 10px;
+  background-color: hotpink;
+  border: none;
+}
+.btn:hover { 
+  background-color: rgb(95, 248, 7);
+  border: none;
+}
+  h2 {
+    margin-bottom: 50px;
+  }
+  
+  .blue {
+    background: #5da9fa;
+  }
+  .green { 
+    background: #1baa46;
+  }
+  .yellow { 
+    background: #eeff03;
+  }
+  .pink { 
+    background: #f758dc;
+  }
+  .red { 
+    background: #c70000;
+  }
+  .orange { 
+    background: #f1841d;
+  }
+
+#blue,
+#green,
+#yellow,
+#pink,
+#red,
+#orange {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+  border: none;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  
+}
+#dropZone,
+#colors {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: 200px;
+  margin-bottom: 20px;
+  cursor: grab;
+}
+img {
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+footer { 
+  background-color: rgb(39, 73, 136);
+  height: 50px;
+  width: 100%;
+  text-align: center; 
+}
+.fa-copyright {
+font-size: 17px;
+color: white;
+padding-top: 20px;
+}

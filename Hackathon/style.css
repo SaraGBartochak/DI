@@ -1,0 +1,129 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+body { 
+    font-family:'Zen Kurenaido', sans-serif;
+}
+.navbar > a { 
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.navbar a:hover { 
+    cursor: pointer;
+    color: rgb(95, 248, 7);
+}
+.container { 
+    width: 100%;
+    height: 900px;
+}
+.container-fluid { 
+    margin-bottom: 30px;
+}
+.bg {
+    background-image: url(./img/students-gc.jpg);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+h1 { 
+    text-align: center; 
+    margin-bottom: 30px;
+    color: rgb(39, 73, 136);
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Shizuru', cursive;
+} 
+h2 { 
+    color: rgb(255, 208, 0);
+    margin-bottom: 50px;
+}
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(240, 0, 240); 
+}
+p {
+    font-size: medium;
+    font-size: 2em;
+}
+.text { 
+    font-size: 1.5em;
+    color: rgb(32, 32, 32);
+    background-color: rgba(137, 108, 240, 0.103);
+}
+li { 
+    margin-left: 20px;
+}
+.fun {
+    width: 100%;
+    
+}
+.container-lg {
+    margin-top: 50px;
+    text-align: center;
+}
+.figure > a > img { 
+    width: 175px;
+    height: 155px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: transform 250ms;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.figure > a > img:hover { 
+    transform: translateY(-10px);
+}
+.figure-caption { 
+    font-size: 2em;
+}
+.colored { 
+    background-color:rgba(137, 108, 240, 0.103);
+}
+.second { 
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.contact {
+ width: 500px;
+ margin-top: 100px;
+ left: 50px;
+ right: 50px;
+ font-size: 1.5em;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+.submit { 
+    margin-top: 20px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: rgb(95, 248, 7);
+}
+.form-floating {
+    margin-top: 20px;
+}
+footer { 
+    background-color: rgb(39, 73, 136);
+    height: 50px;
+    width: 100%;
+    text-align: center; 
+}
+.fa-copyright {
+ font-size: 17px;
+ color: white;
+ padding-top: 20px;
+}

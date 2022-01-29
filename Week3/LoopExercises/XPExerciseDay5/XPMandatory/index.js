@@ -37,6 +37,23 @@ let myFavColors = ["Black", "DarkBlue", "Lilac", "Red Wine"];
  for (let i = 0; i < myFavColors.length; i++) {
     console.log("My", (i+1), "favorite color is", myFavColors[i]);
 }
+let suffix; 
+
+switch (index) {
+    case 0:
+        suffix = "st"
+        break;
+    case 1:
+        suffix = "nd"
+        break;
+    case 2:
+        suffix = "rd"
+        break;
+    default:
+        suffix = "th"
+        break;
+}
+console.log( `My ${index} ${suffix} is ${myFavColors}`);
 
 //  myFavColors.forEach(function(myFavColors, i) {
 //      console.log("My" + (i +1) + position + "favorite color is" myFavColors)
@@ -108,9 +125,12 @@ let building = {
     }
 
     //Exercise 7
+    let secretName = "";
 
     let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
     names.sort();
+
     for (i = 0; i < names.length; i++) {
-        console.log(names[i][0]);
+        secretName+= (names[i][0]);
     }
+    console.log(secretName);
