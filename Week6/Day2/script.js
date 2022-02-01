@@ -28,7 +28,7 @@
 //     window.a = "hello";
 // }
 
-// // answer: a = 0, because still a var global
+// // answer: a = 3
 // function q32() {
 //     alert(a);
 // }
@@ -40,7 +40,7 @@
 //     alert(a);
 // }
 
-// //#5 answer: var = 2 // correct answer var = 5
+// //#5 answer: var = 5
 // var a = 2;
 // if (true) {
 //     var a = 5;
@@ -60,11 +60,11 @@
 // Assign to this variable, a ternary operator. If winBattle() is true, the experiencePoints variable should be equal to 10, else the variable should be equal to 1.
 // Console.log the experiencePoints variable.
 
-// winBattle = () => true;
+winBattle = () => true;
 
-// let experriencePoints = (true) ? 10 : 1;
+let experriencePoints = winBattle() ? 10 : 1;
 
-// console.log(experriencePoints)
+console.log(experriencePoints)
 
 // Exercise 3 : Is It A String ?
 // Instructions
@@ -76,6 +76,9 @@
 // //true
 // console.log(isString([1, 2, 4, 0]));
 // //false
+
+let isString = (toTest) => typeof toTest=== "string"
+? true : false
 
 // let check = "hello";
 
@@ -94,36 +97,36 @@
 // Check if at least one element of the array is equal to the value “Violet”. If yes, console.log("Yeah"), else console.log("No...")
 // Hint : Use the array methods taught in class. Look at the lesson Array Methods.
 
-// let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
-// let suffix;
+let suffix;
 
-// for (let index = 0; index < colors.length; index++) {
-//      console.log(index);    
+for (let index = 0; index < colors.length; index++) {
+     console.log(index);    
      
-//      if (colors.includes("Violet", [6])) {
+     if (colors.includes("Violet", [6])) {
 
-//         console.log("Yeah");
-//     } else { 
+        console.log("Yeah");
+    } else { 
 
-//         console.log("No...")
-//     }
-// }
-// switch (index) {
+        console.log("No...")
+    }
+}
+switch (index) {
 
-// case 0: "st"
-//     break;
+case 0: "st"
+    break;
 
-// case 1: "nd"
-//     break;
+case 1: "nd"
+    break;
 
-// case 2: "rd"
-//     break;
+case 2: "rd"
+    break;
 
-// default: "th"
-//     break;
-// }
-// console.log(`${index+1}${suffix} is ${colors}`);
+default: "th"
+    break;
+}
+console.log(`${index+1}${suffix} is ${colors}`);
 
 // Exercise 5 : Colors #2
 // Instructions
@@ -163,4 +166,14 @@ for (const value of iterator2) {
 // Create an array with all your monthly expenses, both positive and negative (money made and money spent).
 // Example : let details = ["+200", "-100", "+146", "+167", "-2900"]
 // Create a program that modifies the expenses (ie. the positive AND the negative expenses) so that they will include taxes (multiply each expense by the VAT).
-// Display your current bankAccount standing at the end of the month.
+
+let bankAmount = 10000;
+
+const vat = 0.17;
+
+let details = [+300, -150, +199, +167, -2700];
+
+let newDetails = details.map((expense=>expense*(1+vat)));
+
+bankAmount = newDetails.reduce((previous, current) => previous+current, bankAmount)
+    console.log(bankAmount);
