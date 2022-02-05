@@ -17,7 +17,7 @@
 // function q2() {
 //     a = 5;
 // }
-// // answer: is a = 0
+// // answer: is a = 5
 // function q22() {
 //     alert(a);
 // }
@@ -112,22 +112,6 @@ for (let index = 0; index < colors.length; index++) {
         console.log("No...")
     }
 }
-switch (index) {
-
-case 0: "st"
-    break;
-
-case 1: "nd"
-    break;
-
-case 2: "rd"
-    break;
-
-default: "th"
-    break;
-}
-console.log(`${index+1}${suffix} is ${colors}`);
-
 // Exercise 5 : Colors #2
 // Instructions
 // Using these arrays :
@@ -141,21 +125,43 @@ let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
 let ordinal = ["th","st","nd","rd"];
 
-let iterator = ordinal.keys();
+color.forEach((color,index)=>{
+    let ordinalIndex = index+1;
+    let currentOrdinal = ordinal[ordinalIndex]
+    ? ordinal[ordinalIndex]
+    :ordinal[0]
+    console.log(`${ordinalIndex} ${currentOrdinal} choice is ${color}`)
+})
+// let iterator = ordinal.keys();
 
-let iterator2 = ordinal.values();
+// let iterator2 = ordinal.values();
 
-color.forEach(index => console.log(index));
+// color.forEach(index => console.log(index));
+// switch (index) {
 
-for (const key of iterator) {
-   
-    console.log(`${key + 1} choise is ${color}`)
-}
-
-for (const value of iterator2) {
+//     case 0: "st"
+//         break;
     
-    console.log(` ${value} choise is ${color}`)
-}
+//     case 1: "nd"
+//         break;
+    
+//     case 2: "rd"
+//         break;
+    
+//     default: "th"
+//         break;
+//     }
+//     console.log(`${index+1}${suffix} is ${colors}`);
+
+// for (const key of iterator) {
+   
+//     console.log(`${key + 1} choise is ${color}`)
+// }
+
+// for (const value of iterator2) {
+
+//     console.log(` ${value} choise is ${color}`)
+// }
 
 // Exercise 6 : Bank Details
 // Instructions
