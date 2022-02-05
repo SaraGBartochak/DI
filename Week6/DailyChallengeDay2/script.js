@@ -38,12 +38,18 @@ const gameInfo = [
     },
    ];
 
-   let allUsernames = [];
-//    gameInfo.forEach((element) => {
-      
-//    });
+  // let allUsernames = gameInfo.map(a => a.username);
+  //     allUsernames.forEach(element, index => console.log(`${element[index]}!`));
+  //     console.log(allUsernames);
 
-  gameInfo.forEach((value) => {
-    console.log(value); 
+  let winners = [];
 
-});
+      gameInfo.forEach((element, index) => element.score > 5 ? winners[index] = element.username 
+      : element.username);
+      console.log(winners);
+
+      let totalScore = 0;
+
+          gameInfo.forEach(element => totalScore += element.score);
+
+          console.log(totalScore);
