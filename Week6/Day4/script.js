@@ -14,16 +14,18 @@ console.log(sum(10)(20));
 // Write in a one line comment, the difference between function declaration and function expression.
 // Finally, use a one line arrow function and invoke it.
 
- var kgToG = function convertGrams (kilogram) {
+let kgToG = function (kilogram) {
 return kilogram*1000;
 }
 console.log(kilogram(1));
 
-function kgToG (kg) {
+function kgToG1 (kg) {
     return kilogram*1000;
 }
 
+let kgToG2 = kg => kg*1000;
 
+// the difference is that one function name can be omitted to create anonymus functions and the other is IIFE.
 
 // Exercise 3 : Fortune Teller
 // Instructions
@@ -31,8 +33,9 @@ function kgToG (kg) {
 // The function should display in the DOM a sentence like "You will be a <job title> in <geographic location>, and married to <partner's name> with <number of children> kids."
 
 (function (numChildren, partnerName, geoLocation, jobTitle){
-    alert(`You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChildren} kids.`);
-})("3", "Lily","New York", "Teacher");
+ let txt = (`You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChildren} kids.`);
+ document.querySelector("#textToSHow").textContent = txt
+})(3, "Lily","New York", "Teacher");    
 
 // Exercise 4 : Welcome
 // Instructions
@@ -44,11 +47,23 @@ function kgToG (kg) {
 
 (function (userName) {
 
+    let whereToInsert = document.querySelector(`.container`);
+
     let newDiv = document.createElement(`div`);
 
-    let greet = document.createTextNode(`Welcome ${userName}`);
-    newDiv.appendChild(greet);
-    newDiv.appendChild();
+    let img = document.createElement("img");
+    img.src = "https://www.w3schools.com/css/img_avatar.png"
+    img.style.height = "50px";
+
+    let nameUser = document.createElement("span");
+    nameUser.textContent = userName
+    newDiv.appendChild(img)
+    newDiv.appendChild(nameUser)
+    whereToInsert.replaceChild(newDiv, whereToInsert.children[0])
+
+    // let greet = document.createTextNode(`Welcome ${userName}`);
+    // newDiv.appendChild(greet);
+    // newDiv.appendChild();
 
 })();
 console.log(John);
@@ -75,18 +90,20 @@ console.log(John);
 
 // The client wants 6 ingredients in his juice, therefore, invoke the addIngredients function TWICE. Then invoke once the displayJuice function. Finally, invoke the makeJuice function in the global scope.
 
-function makeJuice (size) {
+    let  makeJuice = (size) => {
     let ingredients = [];
 
-    let addIngredients = (ingredient1, ingredient2, ingredient3) {
-
-       let txt = ` The client wants a ${size} juice, containing ${ingredient1}, ${ingredient2}, ${ingredient3}".`;
-
-        document.querySelector(`.whereToWrite`).textContent = txt
-    ingredients.push("Apple");
-    ingredients.push("Mango");
-    ingredients.push("Banana");
+    let addIngredients = (ingredient1, ingredient2, ingredient3) => {
+        ingredients.push("ingredient1");
+        ingredients.push("ingredient2");
+        ingredients.push("ingredient3");
     }
-
-
+    let displayJuice = () => {
+        let txt = ` The client wants a ${size} juice, containing :` 
+        ingredients.forEach((element, index) => txt +=`${element}${index < ingredients.length - 1 ? ',' : '.'}`);
+            document.querySelector(`#whereTowrite`).textContent = txt
+    }
+    addIngredients("banana","mint", "lemon")
+    addIngredients("Strowberry", "Mango", "Ananas")
+    return addIngredients
 }
