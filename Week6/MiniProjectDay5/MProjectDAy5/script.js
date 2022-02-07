@@ -25,17 +25,16 @@ let arrObj = [
 ]
 let randomQuote = () => {
     let newArr = arrObj.map(e=>e.id);
-    randomNum = Math.floor(Math.random() * (newArr.length))
+    randomNum = newArr[Math.floor(Math.random() * (newArr.length))]
     console.log(randomNum);
     quotes = arrObj.find(element => {
         return element.id === randomNum
     });
 
-    console.log(quotes.quote);
+    // console.log(quotes.quote);
 }
 document.querySelector("#btn").addEventListener("click", randomQuote);
 document.querySelector(".whereToShow");
-
 
 // Part 2 : Add Buttons
 // In the HTML file, create a form with the inputs “Quote” and “Author” and a button. So when you click on the button, you can add a new quote to the array of object.
