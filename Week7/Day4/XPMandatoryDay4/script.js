@@ -61,14 +61,14 @@ console.log((entries.map( element => [element[0], element[1]*2])));
 // Exercise 4 : Person Class
 // Instructions
 // Analyze the code below. What will be the output?
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-}
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
 
-const member = new Person('John');
-console.log(typeof member);
+// const member = new Person('John');
+// console.log(typeof member);
 
 // answer: the name will be John, but typeof will be not defined
 // correct answer: object
@@ -94,30 +94,30 @@ console.log(typeof member);
 // Answer: will not be successfull.
 
   // 2
-  class Labrador extends Dog {
-    constructor(name, size) {
-      super(name);
-      this.size = size;
-    }
-  };
+  // class Labrador extends Dog {
+  //   constructor(name, size) {
+  //     super(name);
+  //     this.size = size;
+  //   }
+  // };
 // Answer: will be
 
- // 3
- class Labrador extends Dog {
-    constructor(size) {
-      super(name);
-      this.size = size;
-    }
-  };
-  // Answer: yes
+//  // 3
+//  class Labrador extends Dog {
+//     constructor(size) {
+//       super(name);
+//       this.size = size;
+//     }
+//   };
+//   // Answer: yes
 
-   // 4
-class Labrador extends Dog {
-    constructor(name, size) {
-      this.name = name;
-      this.size = size;
-    }
-  };
+//    // 4
+// class Labrador extends Dog {
+//     constructor(name, size) {
+//       this.name = name;
+//       this.size = size;
+//     }
+//   };
 //   Answer: no, because is defining a new this.name
 
 // Exercise 6 : Challenges
