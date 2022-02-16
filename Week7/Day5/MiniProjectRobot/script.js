@@ -1,3 +1,4 @@
+
 const robots = [
     {
       id: 1,
@@ -71,8 +72,19 @@ const robots = [
     }
     ];
 
-    var inputValue = document.getElementById("searchplace").value;
-       document.addEventListener("keyup", filterItems)
+    let whereToAppend = document.querySelector('#whereToAppend');
+
+    let newRobotArr = robots.map(({id, name, username, email, image}) => new allRobots(id, name, username, email, image) );
+
+    console.log(newRobotArr)
+
+let searchingInput = document.querySelector('input#searchplace');
+searchplace.addEventListener('input', filterRobotsToDisplay);
+
+    // var inputValue = document.getElementById("searchplace").value;
+    //    document.addEventListener("keyup", filterItems)
+
+
     // JavaScript code
 // function search_robots() {
 // 	let input = document.getElementById('searchplace').value
@@ -89,31 +101,31 @@ const robots = [
 // 	}
 // }
 
-// function myFunction() {
-//   // Declare variables
-//   var input, card;
-//   input = document.getElementById('searchplace');
-//   filter = input.value.toLowerCase();
-//    card = document.getElementsByClassName(".card");
-// }                                                                             
-// for (i = 0; i < robots.length; i++) {
-//   a = robots.getElementsByid("id")[0];
-//   txtValue = a.textContent || a.innerText;
-//   if (txtValue.toLowerCase().indexOf(filter) > -1) {
-//     robots[i].style.display = "";
-//   } else {
-//     robots[i].style.display = "none";
-//   }
-// }
+function myFunction() {
+  // Declare variables
+  var input, card;
+  input = document.getElementById('searchplace');
+  filter = input.value.toLowerCase();
+   card = document.getElementsByClassName(".card");
+}                                                                             
+for (i = 0; i < robots.length; i++) {
+  a = robots.getElementsByid("id")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toLowerCase().indexOf(filter) > -1) {
+    robots[i].style.display = "";
+  } else {
+    robots[i].style.display = "none";
+  }
+}
 
-    let search = robots.filter(el => el.name.toLowerCase().indexOf(name.toLowerCase()) !== -1)
+    // let search = robots.filter(el => el.name.toLowerCase().indexOf(name.toLowerCase()) !== -1)
 
 /**
- * Filter array items based on search criteria (query)
+ * Filter array items based on search criteria 
 //  */
- let filterItems = (robots, name) => {
-  return robots.filter(name => name.toLowerCase().indexOf(name.toLowerCase()) !== -1)
-}
+//  let filterItems = (robots, name) => {
+//   return robots.filter(name => name.toLowerCase().indexOf(name.toLowerCase()) !== -1)
+// }
 
 // console.log(filterItems());
 // console.log(filterItems());
