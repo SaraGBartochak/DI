@@ -1,0 +1,12 @@
+"id","last_name","first_name","birth_date"
+1,"Sara","Bartochak","18/02/1987"
+2,"Marc","Benichou","02/11/1998"
+3,"Yoan","Cohen","03/12/2010
+"
+4,"Lea","Benichou","27/07/1987
+"
+5,"Amelia","Dux","07/04/1996
+"
+6,"David","Grez","14/06/2003"
+7,"Omer","Simpson","03/10/1980
+"
