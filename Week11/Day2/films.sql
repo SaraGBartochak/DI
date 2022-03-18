@@ -11,7 +11,7 @@ Beauty and the Beast
 Cidade de Deus
  Tropa de Elite
  My neighbor Totoro
- Braveheart
+    Braveheart
 Slumdog Millionaire
 The Lord of the Rings: The Return of the King
 
@@ -21,4 +21,14 @@ Amélie
 
 Good Bye Lenin!
 
-Panga
+
+
+
+INSERT INTO public.movies (film_title)
+VALUES ('Cidade de Deus'),
+('Braveheart'),
+('Good Bye Lenin!'),
+('My neighbor Totoro'),
+('Slumdog Millionaire'),
+('La Piel Que Habito'),
+('Amélie')

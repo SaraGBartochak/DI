@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(223, 240, 234);
+}
+.txt { 
+    margin-top: 50px;
+    border: 2px dashed blue;
+    color: rgb(32, 31, 31);
+    font-size: large;
+    text-align: center;
+}
+#btn { 
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10x 10px;
+    margin-left: 660px;
+}
