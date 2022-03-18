@@ -13,3 +13,4 @@ fetch('/')
     (document.querySelector('div')).textContent = JSON.stringify(data);
 })
 .catch(e => console.log(e))
+
