@@ -8,7 +8,7 @@ fs.writeFile(`/phrase.txt`, 'Blah blah', err => {
     }
 })
 
-fs.appendFile(`/phrase.txt`, 'Buy orange juice', err => {
+fs.appendFile(`/phrase2.txt`, 'Buy orange juice', err => {
 
     if(err){
 
@@ -16,7 +16,7 @@ fs.appendFile(`/phrase.txt`, 'Buy orange juice', err => {
     }
 })
 
-fs.unlink(`/phrase.txt`, err => {
+fs.unlink(`/phrase2.txt`, err => {
 
     if(err){
 
