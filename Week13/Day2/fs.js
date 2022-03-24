@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.writeFile(`/phrase.txt`, 'Bla bla', err => {
+fs.writeFile(`/phrase.txt`, 'Blah blah', err => {
 
     if(err){
 
@@ -8,7 +8,7 @@ fs.writeFile(`/phrase.txt`, 'Bla bla', err => {
     }
 })
 
-fs.appendFile(`/phrase.txt`, ' Buy orange juice', err => {
+fs.appendFile(`/phrase.txt`, 'Buy orange juice', err => {
 
     if(err){
 
