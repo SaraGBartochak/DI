@@ -2,7 +2,7 @@ const express = require('express');
 const app = express ();
 let data = [];
 
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use('/', express.static(__dirname+'/public'))
 

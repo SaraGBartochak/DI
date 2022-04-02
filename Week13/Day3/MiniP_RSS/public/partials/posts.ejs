@@ -1,0 +1,9 @@
+<% (allRSSFacts).forEach(item => { %> 
+     
+    <div>
+        <a style="color:rgb(106, 42, 165); font-size: 20px; font-weight: bold; text-decoration: none;" href= <%= item.link %><%= item.title %></a>
+        <h5><%= item.pubDate %> | <%= item.creator %> | categories: <span style="font-weight: bold;"><%= item.categories %></span></h5>
+        <p><%= item.contentSnippet %> </p>
+        <hr>
+    </div>
+<% }) %>
