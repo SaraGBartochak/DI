@@ -1,22 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React from 'react';
+import TextH1 from './Components/TextH1';
+import DisplayHello from './Components/DisplayHello';
+import UserFavoriteColors from './Components/UserFavoriteColors'
+import Exercise4 from './Exercise4';
+
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TextH1 />
+        <DisplayHello />
+        <UserFavoriteColors />
+        <Exercise4 />
       </header>
     </div>
   );
