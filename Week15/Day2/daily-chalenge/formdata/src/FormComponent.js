@@ -38,15 +38,15 @@ function FormComponent (props) {
             <br/>
             <br/>
             <input type="checkbox" name="nutsFree" checked={props.nutsFree} onChange={props.handleChange}/>
-            <span>Nuts free</span>
+            <p>Nuts free</p>
 
             <br/>
             <input type="checkbox" name="lactoseFree" checked={props.lactoseFree} onChange={props.handleChange}/>
-            <span>Lactose free</span>
+            <p>Lactose free</p>
 
             <br/>
             <input type="checkbox" name="vegan" checked={props.isVegan} onChange={props.handleChange}/>
-            <span>Vegan</span>
+            <p>Vegan</p>
 
             <br/>
             
