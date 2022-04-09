@@ -2,37 +2,43 @@ import logo from './logo.svg';
 import './App.css';
 import BuggyCounter from './components/BuggyCounter'
 import ErrorBoundary from './components/ErrorBoundary'
+import FavColor from './components/FavColor'
+import Child from './components/Child';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+   <>
       {/* Expected to crash both */}
-       <ErrorBoundary>
+       {/* <ErrorBoundary>
          <BuggyCounter/>
          <br/>
          <BuggyCounter/>
-       </ErrorBoundary>
+       </ErrorBoundary> */}
       {/* end here */}
 
     {/* Part 2 */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <BuggyCounter />
       </ErrorBoundary>
 
       <ErrorBoundary>
         <BuggyCounter />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* End part 2 */}
 
       {/* Part 3 */}
 
-      <BuggyCounter/>
+      {/* <BuggyCounter/> */}
 
-      
-      </header>
-    </div>
+      {/* Color */}
+      {/* <FavColor /> */}
+      {/* End Color */}
+
+      {/* Part 3 */}
+      <Child />
+      </>
+
   );
 }
 
