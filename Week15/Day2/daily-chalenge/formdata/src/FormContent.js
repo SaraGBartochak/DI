@@ -18,11 +18,10 @@ class FormContent extends Component {
   }
 
   handleChange(e) {
-    let { value, name, type, checked } = e.target;
+    let { name, type, checked, value } = e.target;
 
-    type === "checkbox"
-      ? this.setState({ [name]: checked })
-      : this.setState({ [name]: value });
+    type === "checkbox" ? this.setState({ [name]: checked })
+    : this.setState({ [name]: value });
   }
 }
 
