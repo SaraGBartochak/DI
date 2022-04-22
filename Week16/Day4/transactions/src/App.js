@@ -7,6 +7,7 @@ import TransactionsList from './components/TransactionsList';
 function App() {
   return (
 <>
+    
     {/* <TransactionForm /> */}
     <TransactionsList />
 </>

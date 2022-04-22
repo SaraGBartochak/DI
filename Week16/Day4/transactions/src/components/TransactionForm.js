@@ -1,5 +1,7 @@
 import React from "react";
 import {connect} from 'react-redux';
+// import { insert } from "../actions/transactionActions";
+// import { update } from "../actions/transactionActions";
 import * as actions from '../actions/transactionActions'
 
 
@@ -21,7 +23,7 @@ class TransactionsForm extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault()
         if(this.props.currentIndex === -1) {
-            this.props.insert(this.state);
+            this.props.insertTransaction(this.state);
         } else { 
             console.log(this.state)
             this.props.updateTransaction(this.state)
@@ -42,6 +44,7 @@ class TransactionsForm extends React.Component {
             <input name='amount' type='text' onChange={this.handleInputChange} placeholder="Amount" value={this.state.amount}></input><br/>
             <br/>
             <button type="submit">Submit</button>
+           
             </form>
 
             </>
@@ -57,8 +60,8 @@ class TransactionsForm extends React.Component {
 
     const mapDispatchToProps = (dispatch) => {
         return {
-            insert: actions.insert,
-            update: actions.update
+            insertTransaction: actions.insert,
+            updateTransaction: actions.update
         }
     }
 

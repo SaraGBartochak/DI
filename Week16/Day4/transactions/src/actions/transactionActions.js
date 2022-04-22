@@ -11,10 +11,10 @@ export const update = data => {
     }
 }
  
-export const Delete = data => {
+export const Delete = id => {
     return {
         type: 'DELETE',
-        payload: data
+        payload: id
 
     }
 }
