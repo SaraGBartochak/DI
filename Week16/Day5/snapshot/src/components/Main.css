@@ -1,0 +1,28 @@
+h3 {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 550px;
+    text-align: center;
+    font-weight: bold;
+}
+.photos {
+    position: relative;
+    top: 150px; 
+}
+.mb-3 {
+    margin-top: 60px;
+}
+
+.frame {
+    width: 275px;
+    overflow: hidden;
+}
+
+.frame img {
+    width: 250px;
+}
+
+.frame img:hover {
+    transform: scale(1.25);
+    transition: transform 1.25s;
+}
