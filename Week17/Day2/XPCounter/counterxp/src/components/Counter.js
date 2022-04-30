@@ -16,12 +16,12 @@ class Counter extends React.Component {
     };      
 
     render (){
-        
+        const { count, increment, decrement } = this.props;
         return (
             <>
-            <div>
-                {this.props.count}
-            </div>
+            <p>
+                Clicked: {count} times
+            </p>
             <div>
                 <button onClick={this.props.decrement}>-</button>
                 <button onClick={this.props.increment}>+</button>
