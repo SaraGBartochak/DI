@@ -1,6 +1,6 @@
 export const onAgeUp = () => {
     return {
-        type: 'AGE_UP '
+        type: 'AGE_UP'
     }
 }
 
