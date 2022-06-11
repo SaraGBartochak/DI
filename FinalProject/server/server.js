@@ -1,25 +1,41 @@
 const express = require('express');
-const dotenv = require('dotenv');
-const { request } = require('express');
-const cors = require('cors');
-
-
-dotenv.config();
+const path = require('path');
+const multer = require('multer');
 
 const app = express();
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded());
 
+app.use('/',express.static(path.join(__dirname,'/public')));
+app.use('/upload', express.static(path.join(__dirname,'/uploads')));
 
-app.listen(process.env.PORT||3000, ()=>{
-    console.log(`listen to port ${process.env.PORT||3000}`);
-})
+app.listen(`${PORT}`, ()=> {
+  console.log(`Listening on ${PORT}`);
+});
 
-// app.get('/test', (req,res)=>{
-//     res.send('hello')
-// })
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null,'uploads');
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname))
+  }
+});
 
-app.post('login',(req,res)=> {
-    res.send(`Hello ${req.body.name}`)
-})
+const fileFilter = (req, file, cb) => {
+  if(file.mimetype == 'image/jpeg' || file.mimetype == 'image/png' || file.mimetype == 'image/jpg'){
+    cb(null, true)
+  }
+  else{
+    cb(null, false)
+  }
+}
+
+const upload = multer({storage: storage, fileFilter: fileFilter });
+
+app.post('/uploadFile', upload.single('image') , (req,res)=>{
+  try{
+    return res.status(201).json({msg:'file uploaded'})
+  }
+  catch(e){
+    console.log(e);
+  }
+});
